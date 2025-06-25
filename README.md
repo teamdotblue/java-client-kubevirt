@@ -40,7 +40,7 @@ build shadow jar:
 
 publish to mavem local:
 ```
-./gradlew uploadShadow
+mvn deploy -Psign
 ```
 
 generate kubevirt sources (model + api):
