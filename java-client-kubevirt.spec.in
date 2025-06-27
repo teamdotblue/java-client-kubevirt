@@ -48,8 +48,6 @@ BuildRequires:	maven-wagon-http
 BuildRequires:	maven-resolver-connector-basic
 BuildRequires:	maven-resolver-transport-wagon
 BuildRequires: mvn(org.jdom:jdom2)
-BuildRequires: mvn(org.vafer:jdependency)
-BuildRequires: mvn(org.apache.commons:commons-collections4)
 
 # All are provided by our fat jar
 Provides:	mvn(io.kubernetes:client-java) = 6.0.1
