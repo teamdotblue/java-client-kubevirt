@@ -12,7 +12,7 @@ installdeps:
 		java-21-openjdk-devel \
 		make \
 		maven-source-plugin \
-		maven-shade-plugin \
+		maven-assembly-plugin \
 		maven \
 		rpm-build \
 		sed
