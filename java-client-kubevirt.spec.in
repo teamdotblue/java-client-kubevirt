@@ -78,7 +78,7 @@ export JAVA_HOME="%{_java_jdk_home}"
 mvn clean compile assembly:single -DskipTests
 
 # Register the resulting fat JAR
-%mvn_artifact pom.xml target/%{name}-%{version}-fat.jar
+%mvn_artifact pom.xml target/%{name}-%{version}-jar-with-dependencies.jar
 
 %install
 %mvn_install
