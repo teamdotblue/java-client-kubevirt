@@ -86,8 +86,6 @@ mvn clean compile assembly:single -DskipTests
 %files -f .mfiles
 %dir %{_javadir}/%{name}
 
-%files javadoc -f .mfiles-javadoc
-
 %changelog
 * Mon Mar 30 2020 Piotr Kliczewski <pkliczew@redhat.com = 0.5.0
 - types: EvictionStrategy and VolumeMode wrongly defined as types
