@@ -32,6 +32,9 @@ jobs:
     steps:
     - name: Checkout sources
       uses: ovirt/checkout-action@main
+    
+    - name: install maven-shade
+      run: dnf install -y maven-shade-plugin
 
     - name: Perform build
       run: |
