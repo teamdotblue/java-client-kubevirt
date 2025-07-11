@@ -21,6 +21,9 @@
 %global	package_maven_version @PACKAGE_MAVEN_VERSION@
 
 %global	_java_jdk_home /usr/lib/jvm/java-21-openjdk
+%global _maven_generate_requires %{nil}
+%global _maven_generate_depmap %{nil}
+%global _maven_repository_metadata %{nil}
 
 Summary:	Kubevirt java client (%{name}) for oVirt
 Name:		@PACKAGE_NAME@
@@ -52,12 +55,9 @@ BuildRequires:	maven-resolver-transport-wagon
 # All are provided by our fat jar
 Provides:	mvn(io.kubernetes:client-java) = 6.0.1
 Provides:	mvn(io.gsonfire:gson-fire) = 1.8.3
-Provides: mvn(org.vafer:jdependency) = 2.8.0
+Provides:   mvn(org.vafer:jdependency) = 2.8.0
 Provides:	mvn(javax.annotation:javax.annotation-api) = 1.3.2
 
-
-# Disable automatic dependency generation for Maven
-%global _maven_generate_requires %{nil}
 
 %description
 java client kubevirt
