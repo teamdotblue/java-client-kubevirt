@@ -72,18 +72,13 @@ This package contains the API documentation for %{name}.
 %endif
 
 %build
-%configure MVN="xmvn"
-# Force using OpenJDK 21
 export JAVA_HOME="%{_java_jdk_home}"
 
-# this step is necessary to resolve mvn dependencies that are not available
-# as RPM distribution
-make %{?_smp_mflags}
-
-# Run the Maven build manually
+# Build the fat JAR with all dependencies included
 mvn clean compile assembly:single -DskipTests
 
-%mvn_artifact pom.xml target/@PACKAGE_NAME@-%{version}.jar
+# Register the resulting fat JAR
+%mvn_artifact pom.xml target/%{name}-%{version}-fat.jar
 
 %install
 %mvn_install
