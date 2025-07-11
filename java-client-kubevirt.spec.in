@@ -81,7 +81,7 @@ export JAVA_HOME="%{_java_jdk_home}"
 make %{?_smp_mflags}
 
 %mvn_build -i -X -d -- %{?_mvn_opts}
-%mvn_artifact dependency-reduced-pom.xml target/@PACKAGE_NAME@-%{version}.jar
+%mvn_artifact pom.xml target/@PACKAGE_NAME@-%{version}.jar
 
 %install
 %mvn_install
