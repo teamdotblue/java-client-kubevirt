@@ -83,7 +83,6 @@ make %{?_smp_mflags}
 # Run the Maven build manually
 mvn clean compile assembly:single -DskipTests
 
-%mvn_build -i -X -d -- %{?_mvn_opts}
 %mvn_artifact pom.xml target/@PACKAGE_NAME@-%{version}.jar
 
 %install
