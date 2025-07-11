@@ -94,7 +94,7 @@
     <dependency>
       <groupId>io.sundr</groupId>
       <artifactId>sundr-core</artifactId>
-      <version>...</version>
+      <version>0.200.4</version>
       <scope>compile</scope>
       <optional>true</optional>
     </dependency>
@@ -102,7 +102,7 @@
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcprov-jdk15on</artifactId>
-      <version>...</version>
+      <version>140</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
