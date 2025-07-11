@@ -103,6 +103,8 @@
             <phase>package</phase>
             <goals>
               <goal>single</goal>
+              <finalName>${project.artifactId}-${project.version}-fat</finalName>
+              <appendAssemblyId>false</appendAssemblyId>
             </goals>
           </execution>
       </plugin>
