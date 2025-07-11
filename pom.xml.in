@@ -70,18 +70,6 @@
       </snapshots>
     </repository>
     <repository>
-      <id>jboss-public-repository-group</id>
-      <name>JBoss Public Maven Repository Group</name>
-      <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
-      <layout>default</layout>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository>
-    <repository>
       <id>atlassian.public.repo</id>
       <name>The Atlassian public repo</name>
       <url>https://maven.atlassian.com/content/groups/public</url>
