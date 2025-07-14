@@ -51,7 +51,6 @@ BuildRequires:  maven-assembly-plugin
 BuildRequires:	maven-wagon-http
 BuildRequires:	maven-resolver-connector-basic
 BuildRequires:	maven-resolver-transport-wagon
-BuildRequires:  mvn(io.kubernetes:client-java)
 
 # All are provided by our fat jar
 Provides:	mvn(io.kubernetes:client-java)
