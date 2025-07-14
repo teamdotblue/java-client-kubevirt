@@ -53,7 +53,6 @@ BuildRequires:	maven-resolver-connector-basic
 BuildRequires:	maven-resolver-transport-wagon
 
 # All are provided by our fat jar
-Provides:	mvn(io.kubernetes:client-java)
 Provides:	mvn(javax.annotation:javax.annotation-api)
 
 
