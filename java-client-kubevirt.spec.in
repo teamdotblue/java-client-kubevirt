@@ -54,8 +54,6 @@ BuildRequires:	maven-resolver-transport-wagon
 
 # All are provided by our fat jar
 Provides:	mvn(io.kubernetes:client-java)
-Provides:	mvn(io.gsonfire:gson-fire)
-Provides:   mvn(org.vafer:jdependency)
 Provides:	mvn(javax.annotation:javax.annotation-api)
 
 

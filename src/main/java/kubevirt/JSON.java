@@ -21,8 +21,6 @@ import com.google.gson.internal.bind.util.ISO8601Utils;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import com.google.gson.JsonElement;
-import io.gsonfire.GsonFireBuilder;
-import io.gsonfire.TypeSelector;
 
 import kubevirt.io.*;
 import okio.ByteString;
@@ -50,10 +48,7 @@ public class JSON {
     private ByteArrayAdapter byteArrayAdapter = new ByteArrayAdapter();
 
     public static GsonBuilder createGson() {
-        GsonFireBuilder fireBuilder = new GsonFireBuilder()
-        ;
-        GsonBuilder builder = fireBuilder.createGsonBuilder();
-        return builder;
+        return new GsonBuilder();
     }
 
     private static String getDiscriminatorValue(JsonElement readElement, String discriminatorField) {
